@@ -39,6 +39,11 @@
       text-align:center;
       box-shadow:0 8px 30px rgba(6,95,70,0.12);
     }
+    .header-logo {
+  	  width: 120px; /* Adjust this value (e.g., 40px, 60px) to control the logo size */
+      height: auto; /* Ensures the image doesn't get distorted */
+      flex-shrink: 0; /* Prevents the logo from shrinking on smaller screens */
+    }
     header h1{margin:0;font-size:1.6rem}
     header p{margin:10px auto 0;max-width:760px;opacity:0.95}
     main{
@@ -99,6 +104,7 @@
 <body>
   <div class="site">
     <header>
+	  <img src="UASBLogo.jpg" alt="FALSECAST Logo" class="header-logo">
       <h1>FALSECAST — False Smut Disease Risk Forecast</h1>
       <p contenteditable="true">
         FALSECAST is a web enabled forecasting and advisory system for Rice False Smut based on weather thresholds and machine learning models.
